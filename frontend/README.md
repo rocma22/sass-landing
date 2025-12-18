@@ -115,18 +115,72 @@ Replace the logo and brand name in:
 
 ### Vercel (Recommended)
 
-1. Push your code to GitHub
-2. Connect your repo to [Vercel](https://vercel.com)
-3. Deploy with one click
+1. **Connect your GitHub repository** to [Vercel](https://vercel.com)
+2. **Import your project** from GitHub
+3. **Configure build settings:**
+   - **Root Directory:** `frontend`
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+4. **Deploy!** Your site will be live instantly
 
 ### Netlify
 
-1. Build the project: `npm run build`
-2. Upload the `dist` folder to [Netlify](https://netlify.com)
+1. **Connect your GitHub repository** to [Netlify](https://netlify.com)
+2. **Set build settings:**
+   - **Base directory:** `frontend`
+   - **Build command:** `npm run build`
+   - **Publish directory:** `dist`
+3. **Deploy**
 
-### Other Platforms
+### Manual Deployment
 
-The built files in the `dist` folder can be deployed to any static hosting service.
+```bash
+# Build for production
+npm run build
+
+# Preview locally
+npm run preview
+
+# Deploy the 'dist' folder to any static hosting service
+```
+
+## � CI/CD Pipeline
+
+This template includes a comprehensive GitHub Actions workflow that automatically:
+
+- **Tests** the code on multiple Node.js versions (18.x, 20.x)
+- **Lints** the code for consistency
+- **Builds** the project for production
+- **Runs Lighthouse** performance audits (targets 90+ scores)
+- **Deploys** to Vercel automatically on master branch pushes
+
+### Lighthouse Scores Target:
+- **Performance:** 90+
+- **Accessibility:** 95+
+- **Best Practices:** 95+
+- **SEO:** 95+
+
+### Setting up Auto-Deployment:
+
+1. **Connect to Vercel:**
+   - Go to [Vercel](https://vercel.com) and sign up/login
+   - Import your GitHub repository
+   - Vercel will auto-detect the settings from `vercel.json`
+
+2. **Add Vercel Secrets to GitHub:**
+   ```bash
+   # Get these from Vercel dashboard (Settings > Tokens)
+   gh secret set VERCEL_TOKEN
+   gh secret set VERCEL_ORG_ID
+   gh secret set VERCEL_PROJECT_ID
+   ```
+
+3. **Push to trigger deployment:**
+   ```bash
+   git add .
+   git commit -m "feat: add CI/CD pipeline"
+   git push
+   ```
 
 ## 📄 Pages
 

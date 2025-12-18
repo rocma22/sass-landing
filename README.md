@@ -40,5 +40,6 @@ MIT License - see [frontend/LICENSE](frontend/LICENSE) for details.
 
 ---
 
-**Version:** 1.0.0  
-**Last updated:** December 18, 2025
+**🌐 Repository:** https://github.com/rocma22/sass-landing  
+**📦 Version:** 1.0.0  
+**📅 Last updated:** December 18, 2025
