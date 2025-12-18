@@ -1,0 +1,16 @@
+{
+  "name": "SaaSPro - SaaS Landing Page Template",
+  "short_name": "SaaSPro",
+  "description": "Modern SaaS landing page template built with React & Tailwind CSS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

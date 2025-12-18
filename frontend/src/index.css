@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-gray-900 antialiased dark:bg-gray-900 dark:text-white;
+  }
+}
+
+* {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ✅ FIX SCROLL OFFSET (IMPORTANT) */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 112px; /* navbar height desktop */
+}
+
+/* Mobile navbar height */
+@media (max-width: 640px) {
+  html {
+    scroll-padding-top: 350px;
+  }
+}
