@@ -37,3 +37,8 @@ MIT License - see [frontend/LICENSE](frontend/LICENSE) for details.
 - SEO-friendly structure
 
 [View Live Demo](https://saaspro-template.vercel.app) | [Documentation](frontend/README.md)
+
+---
+
+**Version:** 1.0.0  
+**Last updated:** December 18, 2025
